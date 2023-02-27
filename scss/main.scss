@@ -3,7 +3,9 @@ $containerWidth: 940px;
 $baseFontSize: 18px;
 $fontWeightBold: 700;
 
-// colors 
+// z-index
+
+$z-fixed-menu: 100;
 
 // normalize
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
@@ -27,3 +29,4 @@ $fontWeightBold: 700;
 @import "blocks/order-section";
 @import "blocks/form";
 @import "blocks/radio";
+@import "blocks/fixed-menu";
