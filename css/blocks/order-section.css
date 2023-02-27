@@ -1,0 +1,6 @@
+.order__section {
+  background: url("../../img/bg.jpg") center top/cover no-repeat;
+  height: 100vh;
+  min-height: 650px;
+  color: #fff;
+}
