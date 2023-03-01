@@ -68,7 +68,7 @@ img {
 }
 
 .hero {
-  background: url("../img/hero-bg.png") center top/cover no-repeat;
+  background: url("../../img/hero-bg.png") center top/cover no-repeat;
   color: #fff;
 }
 
