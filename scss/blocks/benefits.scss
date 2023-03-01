@@ -1,0 +1,28 @@
+.benefits {
+    display: flex;
+}
+
+.benefits__item {
+    flex: 1;
+    position: relative;
+    padding: 0 2.2%;
+
+    &::before {
+        content: url(../../img/circle.svg);
+        position: absolute;
+        top: 54px;
+        right: 0;
+        transform: translateX(50%);
+    }
+
+    &:first-child {
+        padding-left: 0;
+    }
+    &:last-child {
+        padding-right: 0;
+
+        &::before {
+            display: none;
+        }
+    }
+}

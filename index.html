@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=1000">
     <title>Surfboard</title>
-    <link rel="stylesheet" href="css/layout/main.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <div class="wrapper">
         <div class="main-content">
-            <section class="hero">
+            <section class="section hero">
                 <div class="container hero__container">
                     <header class="header">
                         <img src="img/logo.svg" alt="Surfboard logo" class="logo">
@@ -136,10 +136,10 @@
                     </ul>
                 </div>
             </section>
-            <section class="section">
+            <section class="section reviews">
                 <div class="container">
-                    <h2 class="section__title">Отзывы</h2>
-                    <div class="reviews">
+                    <h2 class="section__title reviews__main-title">Отзывы</h2>
+                    <div class="reviews__block">
                         <div class="reviews__display">
                             <div class="reviews__display-inner">
                                 <div class="reviews__avatar">
@@ -153,7 +153,6 @@
                                             заказала себе доску в SurfBoard. Дизайнер команды - волшебница! Она учла все
                                             мои предпочтения и комментарии. В итоге получился прекрасный дизайн. А я
                                             катаюсь на доске, которая мне нравится)
-
                                         </p>
                                     </div>
                                     <div class="reviews__author">Ольга Макарова</div>
@@ -182,7 +181,7 @@
             </section>
             <section class="section order-section section--font-color--white">
                 <div class="container">
-                    <h2 class="section__title">Закажите доску</h2>
+                    <h2 class="section__title order-section__title">Закажите доску</h2>
                     <form class="form">
                         <div class="form__col">
                             <div class="form__row">
@@ -221,19 +220,19 @@
                             </div>
                         </div>
                         <div class="form__col">
-                            <div class="form__row">
+                            <div class="form__row form__row--textarea">
                                 <label class="form__block">
                                     <div class="form__title">Комментарий</div>
                                     <textarea class="form__input form__input--textarea"></textarea>
                                 </label>
                             </div>
                             <div class="form__controls">
-                                <label class="radio">
+                                <label class="radio form__radio">
                                     <input type="radio" name="option" class="radio__elem">
                                     <div class="radio__visible"></div>
                                     <div class="radio__title">Оплата наличными</div>
                                 </label>
-                                <label class="radio">
+                                <label class="radio form__radio">
                                     <input type="radio" name="option" class="radio__elem">
                                     <div class="radio__visible"></div>
                                     <div class="radio__title">Оплата картой</div>
