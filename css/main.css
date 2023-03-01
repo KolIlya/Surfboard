@@ -68,7 +68,7 @@ img {
 }
 
 .hero {
-  background: url("../../img/hero-bg.png") center top/cover no-repeat;
+  background: url("../img/hero-bg.png") center top/cover no-repeat;
   color: #fff;
 }
 
@@ -244,7 +244,7 @@ img {
   padding: 0 2.2%;
 }
 .benefits__item::before {
-  content: url(../../img/circle.svg);
+  content: url(../img/circle.svg);
   position: absolute;
   top: 54px;
   right: 0;
@@ -387,7 +387,7 @@ img {
 }
 
 .order-section {
-  background: url("../../img/foarm-bg.png") center top/cover no-repeat;
+  background: url("../img/foarm-bg.png") center top/cover no-repeat;
   color: #fff;
 }
 
@@ -470,7 +470,7 @@ img {
   border-radius: 0;
 }
 .radio--checkbox .radio__visible:before {
-  background: url(../../img/galka.svg) center center/cover no-repeat;
+  background: url(../img/galka.svg) center center/cover no-repeat;
 }
 
 .radio__elem {
