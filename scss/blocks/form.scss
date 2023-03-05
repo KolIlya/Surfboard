@@ -1,28 +1,55 @@
 .form {
     display: flex;
+    
+    @include tablets {
+        flex-direction: column;
+        padding: 0 16%;
+    }
+
+    @include phones {
+        padding: 0;
+    }
 }
 
 .form__col {
     flex: 1;
-    margin-right: 37px;
+    margin-right: 2.05rem;
 
     &:last-child {
+        margin-right: 0;
+    }
+
+    @include phones {
         margin-right: 0;
     }
 }
 
 .form__row {
     display: flex;
-    margin-bottom: 14px;
+    margin-bottom: 0.77em;
 
     &--textarea {
-        margin-bottom: 40px;
+        margin-bottom: 2.22rem;
+    }
+
+    @include tablets {
+        margin-bottom: rem(10px);
+
+        &--textarea {
+            margin-bottom: 2rem;
+        }
+    }
+
+    @include tablets {
+        &--textarea {
+            margin-bottom: 3rem;
+        }
     }
 }
 
 .form__block {
     flex: 1;
-    margin-right: 12px;
+    margin-right: 0.66rem;
 
     &:last-child {
         margin-right: 0;
@@ -30,26 +57,39 @@
 }
 
 .form__title {
-    line-height: 22px;
-    margin-bottom: 2px;
+    line-height: 1.22rem;
+    margin-bottom: 0.11rem;
 }
 
 .form__input {
     width: 100%;
     border: none;
-    padding: 15px 12px;
-    border: solid 3px transparent;
-    border-radius: 5px;
+    padding: 0.83rem 0.66rem;
+    border: solid 0.16rem transparent;
+    border-radius: 0.27rem;
 
     &--textarea {
-        height: 150px;
+        height: 8.33rem;
         resize: none;
         display: block;
+
+        @include tablets {
+            height: rem(82px);
+            width: 93%;
+        }
+
+        @include phones {
+            width: 100%;
+        }
     }
 
     &:focus {
-        border: solid 3px #FEDB3F;
+        border: solid 0.16rem #FEDB3F;
         outline: none;
+    }
+
+    @include tablets {
+        padding: 0.53rem 0.66rem;
     }
 
 }
@@ -57,17 +97,30 @@
 .form__controls {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin-bottom: 1.11rem;
 
     &--checkbox {
-        margin-bottom: 43px;
+        margin-bottom: 2.38rem;
+    }
+
+    @include phones {
+        justify-content: center;
     }
 }
 
 .form__radio {
-    margin-right: 14px;
+    margin-right: 0.77rem;
 
     &:last-child {
         margin-right: 0;
     }
+
+    @include tablets {
+        margin-right: 1.4rem;
+    }
+}
+
+.form__buttons {
+    display: flex;
+    justify-content: center;
 }

@@ -3,8 +3,11 @@ $containerWidth: 940px;
 $baseFontSize: 18px;
 $fontWeightBold: 700;
 
-// z-index
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
 
+// z-index
 $z-fixed-menu: 100;
 
 // normalize
@@ -12,7 +15,7 @@ $z-fixed-menu: 100;
 
 // setups 
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;0,800;1,400&display=swap");
-@import "layout";
+@import "layout.scss";
 
 // components
 @import "blocks/hero";
@@ -30,3 +33,11 @@ $z-fixed-menu: 100;
 @import "blocks/form";
 @import "blocks/radio";
 @import "blocks/fixed-menu";
+@import "blocks/map";
+@import "blocks/social";
+@import "blocks/footer";
+@import "blocks/contacts";
+@import "blocks/media";
+@import "blocks/menu";
+@import "blocks/hamburger";
+@import "blocks/phone-number";

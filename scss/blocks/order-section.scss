@@ -4,5 +4,10 @@
 }
 
 .order-section__title {
-    margin-bottom: 59px;
+    margin-bottom: 3.27rem;
+
+    @include tablets {
+        margin-bottom: 1.7rem;  
+        width: 95%;
+    }
 }

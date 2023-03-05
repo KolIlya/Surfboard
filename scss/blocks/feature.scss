@@ -1,16 +1,16 @@
 .feature {
     display: flex;
     align-items: center;
-    max-width: 159px;
+    max-width: 8.83rem;
 }
 
 .feature__icon {
-    width: 45px;
-    margin-right: 7px;
+    width: 2.5rem;
+    margin-right: 0.38rem;
 }
 
 .feature__text {
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 0.88rem;
+    line-height: 1rem;
     font-weight: $fontWeightBold;
 }

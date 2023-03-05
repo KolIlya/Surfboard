@@ -1,0 +1,27 @@
+.phone-number {
+    font-weight: $fontWeightBold;
+    font-size: 1.22rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.phone-number__icon {
+    width: 0.66rem;
+    height: 0.66rem;
+    margin-right: 0.27rem;
+}
+
+.phone-number.header__phone-number {
+    @include tablets {
+        display: none;
+    }
+}
+
+.phone-number__text {
+    white-space: nowrap;
+}
+
+.phone-number__icon-elem {
+    flex-shrink: 0;
+}

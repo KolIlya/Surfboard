@@ -25,17 +25,17 @@
 }
 
 .radio__visible {
-    width: 25px;
-    height: 25px;
+    width: 1.38rem;
+    height: 1.38rem;
     position: relative;
     border-radius: 50%;
     background: #fff;
-    margin-right: 14px;
+    margin-right: 0.77rem;
 
     &:before {
         content: "";
-        width: 13px;
-        height: 13px;
+        width: 0.72rem;
+        height: 0.72rem;
         background: #FEDB3F;
         border-radius: 50%;
         position: absolute;

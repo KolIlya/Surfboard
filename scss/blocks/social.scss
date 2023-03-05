@@ -1,0 +1,27 @@
+.social__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social__item {
+    margin-right: rem(14px);
+}
+
+.social_item:last-child {
+    margin-right: 0;
+}
+
+.social__svg {
+    display: block;
+    width: 1.11rem;
+    height: 1.11rem;
+    position: relative;
+    color: #b3b3b3;
+    transition: 0.3s color;
+
+    &:hover {
+        color: #292929;
+    }
+}
+
