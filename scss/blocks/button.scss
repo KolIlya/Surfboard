@@ -1,10 +1,10 @@
 .button {
-    font-size: 0.88rem;
+    font-size: rem(16px);
     font-weight: 800;
-    padding: 1.16rem 2.27rem;
+    padding: rem(21px) rem(41px);
     text-transform: uppercase;
-    border-radius: 5.55rem;
-    line-height: 1;
+    border-radius: rem(100px);
+    line-height: rem(18px);
     text-decoration: none;
     transition: 0.3s color;
     display: inline-block;
@@ -19,14 +19,17 @@
         }
 
         @include phones {
-            font-size: rem(19px);
+            font-size: rem(18px);
+            line-height: rem(16px);
             text-align: center;
-            padding: rem(21px) rem(36px);
-        }
-
-        @include phones {
-            font-size: rem(16px);
             padding: rem(21px) rem(41px);
+        }
+    }
+    
+    &--big--mobile {
+        @include phones {
+            font-size: rem(19px);
+            line-height: rem(18px);
         }
     }
 
@@ -34,17 +37,18 @@
     &--theme--transparent {
         background: transparent;
         color: #fff;
-        font-weight: 400;
         font-size: $baseFontSize;
         text-transform: none;
-        padding: 1.16rem 1.11rem;
+        padding: rem(21px) rem(20px);
 
         &:hover {
             color: #ffd517;
         }
 
         @include phones {
-            padding: 1.16rem 1.11rem 1.16rem 3rem;
+            line-height: rem(22px);
+            font-weight: 400;
+            padding: rem(21px) rem(20px) rem(21px) rem(54px);
         }
     }
 }

@@ -9,7 +9,7 @@
 .benefits__item {
     flex: 1;
     position: relative;
-    padding: 0 2.2%;
+    padding: 0 2.7%;
 
     &::before {
         content: url(../img/circle.svg);
@@ -20,7 +20,6 @@
 
         @include tablets {
             display: none;
-            padding: 0 2.7%;
         }
     }
 
@@ -33,6 +32,10 @@
         &::before {
             display: none;
         }
+    }
+
+    @include tablets {
+        padding: 0 2%;
     }
 
     @include phones {

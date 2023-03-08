@@ -1,23 +1,9 @@
-// size
-$containerWidth: 940px;
-$baseFontSize: 18px;
-$fontWeightBold: 700;
-
-//breakpoints
-$tablets: 768px;
-$phones: 480px;
-
-@import "blocks/media";
 
 html {
     font-size: $baseFontSize;
 
-    @include tablets {
-        font-size: $baseFontSize - 1px;
-    }
-
     @include phones {
-        font-size: $baseFontSize - 2px;
+        font-size: 3.75vmin;
     }
 }
 

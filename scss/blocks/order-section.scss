@@ -4,10 +4,14 @@
 }
 
 .order-section__title {
-    margin-bottom: 3.27rem;
+    margin-bottom: rem(59px);
 
     @include tablets {
-        margin-bottom: 1.7rem;  
+        margin-bottom: rem(30px);  
         width: 95%;
+    }
+
+    @include phones {
+        margin-bottom: rem(39px);
     }
 }

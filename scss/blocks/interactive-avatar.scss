@@ -1,13 +1,19 @@
 .interactive-avatar {
-    width: 4.55rem;
-    height: 4.55rem;
-    border: 0.33rem solid transparent;
+    width: rem(74px);
+    height: rem(74px);
+    border: rem(6px) solid transparent;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
 
     &--active, &:hover {
         border-color: #FEDB3F;
+    }
+
+    @include phones {
+        width: rem(64px);
+        height: rem(64px);
+        margin-right: rem(10px);
     }
 }
 

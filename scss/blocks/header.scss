@@ -6,6 +6,11 @@
 
     @include tablets {
         align-items: center;
+        padding: rem(1px) rem(13px);
+    }
+
+    @include phones {
+        padding: 0;
     }
 }
 

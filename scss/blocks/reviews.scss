@@ -1,16 +1,27 @@
 .reviews__main-title {
-    margin-bottom: 1.77rem;
+    margin-bottom: rem(32px);
+
+    @include phones {
+        font-size: rem(40px);
+        line-height: rem(36px);
+        margin-bottom: rem(26px);
+    }
 }
 
 .reviews__display {
     background: #F8FAF9;
-    padding: 2.27rem 7.33rem 2.27rem 2.11rem;
-    font-size: $baseFontSize;
-    margin-bottom: 0.66rem;
+    padding: rem(42px) rem(142px) rem(42px) rem(42px);
+    font-size: rem(18px);
+    margin-bottom: rem(15px);
 
     @include tablets {
-        padding: 4.5rem 0.33rem 0.27rem 0.11rem;
-        margin-bottom: 2.66rem;
+        padding: rem(56px) rem(24px) rem(24px) rem(24px);
+        margin-bottom: rem(28px);
+    }
+
+    @include phones {
+        padding: rem(56px) rem(30px) rem(31px) rem(25px);
+        margin-bottom: rem(29px);
     }
 }
 
@@ -25,12 +36,19 @@
 }
 
 .reviews__avatar {
-    width: 14.05rem;
-    height: 14.66rem;
+    width: rem(253px);
+    height: rem(264px);
+    margin-right: rem(38px);
 
     @include tablets {
         width: rem(130px);
         height: rem(130px);
+        margin-bottom: rem(32px);
+        margin-right: 0;
+    }
+
+    @include phones {
+        margin-bottom: rem(27px);
     }
 }
 
@@ -42,47 +60,54 @@
 
 .reviews__content {
     flex: 1;
-    margin-left: 2.22rem;
     color: #292929;
-    padding-top: 1.55rem;
+    padding-top: rem(28px);
 
     @include tablets {
-        margin-left: 0.22rem;
+        padding-top: 0;
     }
 }
 
 .reviews__title {
-    font-size: 1.5rem;
-    line-height: 1.77rem;
+    font-size: rem(27px);
+    line-height: rem(32px);
     font-weight: $fontWeightBold;
-    margin-bottom: 0.83rem;
+    margin-bottom: rem(14px);
 
     @include tablets {
-        margin-bottom: 1rem;
+        margin-bottom: rem(16px);
+    }
+
+    @include phones {
+        margin-bottom: rem(12px);
     }
 }
 
 .reviews__text {
-    font-weight: 400;
-    line-height: 1.22rem;
-    margin-bottom: 1.38rem;
+    @include getLineHeihgt (22, 18);
+    margin-bottom: rem(25px);
     color: #666666;
 
     @include tablets {
+        margin-bottom: rem(17px);
         padding: 0 rem(17px);
         line-height: rem(21.6px);
+    }
+
+    @include phones {
+        margin-bottom: rem(12px);
     }
 }
 
 .reviews__author {
     font-weight: $fontWeightBold;
-    line-height: 1.33rem;
+    line-height: rem(24px);
 }
 
 .reviews__switcher {
     display: flex;
     justify-content: center;
-    margin-right: 0.33rem;
+    margin-right: rem(6px);
 
     &:last-child {
         margin-right: 0;

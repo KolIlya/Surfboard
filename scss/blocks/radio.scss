@@ -25,17 +25,17 @@
 }
 
 .radio__visible {
-    width: 1.38rem;
-    height: 1.38rem;
+    width: rem(25px);
+    height: rem(25px);
     position: relative;
     border-radius: 50%;
     background: #fff;
-    margin-right: 0.77rem;
+    margin-right: rem(14px);
 
     &:before {
         content: "";
-        width: 0.72rem;
-        height: 0.72rem;
+        width: rem(13px);
+        height: rem(13px);
         background: #FEDB3F;
         border-radius: 50%;
         position: absolute;
@@ -47,5 +47,13 @@
 
     &:last-child {
         margin-right: 0;
+    }
+
+    @include tablets {
+        margin-right: rem(10px);
+    }
+
+    @include phones {
+        margin-right: rem(5px);
     }
 }

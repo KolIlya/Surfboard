@@ -1,37 +1,40 @@
 .headline {
     text-align: center;
-    margin-bottom: 2.72rem;
+    margin-bottom: rem(49px);
 
     @include phones {
-        margin-bottom: 3.92rem;
+        margin-bottom: rem(53px);
     }
 }
 
 .headline__title {
-    margin-bottom: 0.94rem;
     color: #292929;
+    margin-bottom: rem(17px);
+    font-size: rem(48px);
+    line-height: rem(58px);
+
+    @include getLineHeihgt (58, 48);
 
     @include tablets {
-        letter-spacing: rem(2px);
+        margin-bottom: rem(16px);
     }
 
     @include phones {
         font-size: rem(40px);
         line-height: rem(36px);
-        letter-spacing: rem(3px);
+        margin-bottom: rem(9px);
     }
 }
 
 .headline__subtitle {
-    font-weight: 400;
+    line-height: rem(22px);
     padding: 0 27%;
 
     @include tablets {
-        padding: 0 21%;
+        padding: 0 20%;
     }
 
     @include phones {
-        padding: 0 6%;
-        margin-bottom: 0.6rem;
+        padding: 0 1.8%;
     }
 }

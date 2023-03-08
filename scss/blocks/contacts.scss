@@ -11,13 +11,16 @@
 }
 
 .contacts__info {
-    font-size: 1.16rem;
-    font-weight: 400;
-    line-height: 1.33rem;
+    font-size: rem(21px);
+    line-height: rem(24px);
+    margin-bottom: rem(8px);
+
+    @include phones {
+        margin-bottom: rem(12px);
+    }
 }
 
 .phone-number--theme--black {
-    font-size: 1.16rem;
-    font-weight: 400;
-    line-height: 1.16rem;
+    font-size: rem(21px);
+    line-height: rem(21px);
 }
