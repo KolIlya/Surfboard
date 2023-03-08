@@ -9,12 +9,6 @@
     &--active, &:hover {
         border-color: #FEDB3F;
     }
-
-    @include phones {
-        width: rem(64px);
-        height: rem(64px);
-        margin-right: rem(10px);
-    }
 }
 
 .interactive-avatar__link {

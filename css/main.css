@@ -578,6 +578,11 @@ img {
 .reviews__switcher:last-child {
   margin-right: 0;
 }
+@media screen and (max-width: 480px) {
+  .reviews__switcher {
+    padding: 0.5555555556rem 0.5555555556rem 0 1.1666666667rem;
+  }
+}
 
 .interactive-avatar {
   width: 4.1111111111rem;
@@ -589,13 +594,6 @@ img {
 }
 .interactive-avatar--active, .interactive-avatar:hover {
   border-color: #FEDB3F;
-}
-@media screen and (max-width: 480px) {
-  .interactive-avatar {
-    width: 3.5555555556rem;
-    height: 3.5555555556rem;
-    margin-right: 0.5555555556rem;
-  }
 }
 
 .interactive-avatar__link {
@@ -897,7 +895,8 @@ img {
 }
 @media screen and (max-width: 768px) {
   .social__list {
-    transform: translateX(-9px);
+    transform: translateX(-8px);
+    padding-top: 0.2777777778rem;
   }
 }
 @media screen and (max-width: 480px) {

@@ -112,4 +112,8 @@
     &:last-child {
         margin-right: 0;
     }
+
+    @include phones {
+        padding: rem(10px) rem(10px) 0 rem(21px);
+    }
 }

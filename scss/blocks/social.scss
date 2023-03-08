@@ -6,7 +6,8 @@
     padding-top: rem(12px);
 
     @include tablets {
-        transform: translateX(-9px);
+        transform: translateX(-8px);
+        padding-top: rem(5px);
     }
 
     @include phones {
