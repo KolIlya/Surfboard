@@ -1141,7 +1141,7 @@ img {
 }
 
 .products-slider__arrow {
-  background: url("../../img/rightarrow.png") center center no-repeat;
+  background: url("../img/rightarrow.png") center center no-repeat;
   background-size: contain;
   display: block;
   width: 1.3333333333rem;
