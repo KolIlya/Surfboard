@@ -39,6 +39,14 @@
             margin-bottom: rem(26px);
         }
     }
+
+    @include phones {
+        margin-bottom: rem(12px);
+
+        &--textarea {
+            margin-bottom: rem(24px);
+        }
+    }
 }
 
 .form__block {
@@ -88,6 +96,10 @@
 
     @include tablets {
         padding: rem(8px) rem(10px) rem(6px);
+    }
+
+    @include phones {
+        padding: rem(6px) rem(10px);
     }
 
 }
