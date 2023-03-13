@@ -9,36 +9,41 @@
     width: rem(24px);
     height: rem(40px);
     position: absolute;
-    top: 54%;
+    top: 50%;
     transform: translateY(-50%);
     z-index: 10;
+
+    @include tablets {
+        top: 33%;
+    }
+
+    @include phones {
+        top: rem(190px);
+    }
   
     &--direction--next {
-      right: rem(45px);
+      right: rem(-50px);
 
       @include tablets {
-        right:19%;
-        top: 30%
+        right: 18%;
     }
     
     @include phones {
-        right:1%;
-        top: 26%
+        right: 0%;
     }
     }
   
     &--direction--prev {
-      left: rem(-100px);
-      transform: rotate(-180deg);
+      left: rem(26px);
+      transform: rotate(-180deg) translateY(-50%);
+      transform-origin: 0 0;
     
       @include tablets {
-        left: 17%;
-        top: 28%
+        left: 21%;
     }
     
         @include phones {
-        left: -3%;
-        top: 24%
+        left: 4%;
     }
     }
   }
@@ -50,6 +55,7 @@
 
 .products__title {
     font-size: rem(36px);
+    line-height: rem(43px);
     font-weight: bold;
     margin-bottom: rem(24px);
     color: #0d0d0d;
@@ -69,7 +75,7 @@
 }
 
 .products__desc {
-    width: 78%;
+    // width: 78%;
     font-size: rem(18px);
     line-height: rem(22px);
     margin-bottom: rem(24px);
@@ -86,14 +92,22 @@
 .products__features {
     display: flex;
     margin-bottom: rem(24px);
+
+    @include tablets {
+        padding-left: rem(31px);
+    }
 }
 
 .products__feature {
-    flex-direction: column;
     margin-right: rem(55px);
 
     &:last-child {
         margin-right: 0;
+    }
+
+    @include tablets {
+        text-align: left;
+        margin-right: rem(52px);
     }
 }
 
@@ -111,6 +125,7 @@
 
 .products__order {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 

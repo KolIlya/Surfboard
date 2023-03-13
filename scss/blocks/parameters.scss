@@ -47,7 +47,6 @@
   
 .parameters__dropdown {
     width: rem(273px);
-    height: rem(291px);
     overflow: hidden;
     position: absolute;
     background: #d5d5d5;
@@ -66,18 +65,16 @@
     }
 }
   
-.parameters__list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .parameters__item {
+    padding: rem(6px) rem(12px);
+    align-items: center;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     margin-bottom: rem(8px);
     color: #000;
     font-size: rem(16px);
     line-height: rem(24px);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }

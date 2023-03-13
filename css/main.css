@@ -1147,39 +1147,46 @@ img {
   width: 1.3333333333rem;
   height: 2.2222222222rem;
   position: absolute;
-  top: 54%;
+  top: 50%;
   transform: translateY(-50%);
   z-index: 10;
 }
+@media screen and (max-width: 768px) {
+  .products-slider__arrow {
+    top: 33%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .products-slider__arrow {
+    top: 10.5555555556rem;
+  }
+}
 .products-slider__arrow--direction--next {
-  right: 2.5rem;
+  right: -2.7777777778rem;
 }
 @media screen and (max-width: 768px) {
   .products-slider__arrow--direction--next {
-    right: 19%;
-    top: 30%;
+    right: 18%;
   }
 }
 @media screen and (max-width: 480px) {
   .products-slider__arrow--direction--next {
-    right: 1%;
-    top: 26%;
+    right: 0%;
   }
 }
 .products-slider__arrow--direction--prev {
-  left: -5.5555555556rem;
-  transform: rotate(-180deg);
+  left: 1.4444444444rem;
+  transform: rotate(-180deg) translateY(-50%);
+  transform-origin: 0 0;
 }
 @media screen and (max-width: 768px) {
   .products-slider__arrow--direction--prev {
-    left: 17%;
-    top: 28%;
+    left: 21%;
   }
 }
 @media screen and (max-width: 480px) {
   .products-slider__arrow--direction--prev {
-    left: -3%;
-    top: 24%;
+    left: 4%;
   }
 }
 
@@ -1190,6 +1197,7 @@ img {
 
 .products__title {
   font-size: 2rem;
+  line-height: 2.3888888889rem;
   font-weight: bold;
   margin-bottom: 1.3333333333rem;
   color: #0d0d0d;
@@ -1211,7 +1219,6 @@ img {
 }
 
 .products__desc {
-  width: 78%;
   font-size: 1rem;
   line-height: 1.2222222222rem;
   margin-bottom: 1.3333333333rem;
@@ -1231,13 +1238,23 @@ img {
   display: flex;
   margin-bottom: 1.3333333333rem;
 }
+@media screen and (max-width: 768px) {
+  .products__features {
+    padding-left: 1.7222222222rem;
+  }
+}
 
 .products__feature {
-  flex-direction: column;
   margin-right: 3.0555555556rem;
 }
 .products__feature:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .products__feature {
+    text-align: left;
+    margin-right: 2.8888888889rem;
+  }
 }
 
 .products__feature-title {
@@ -1254,6 +1271,7 @@ img {
 
 .products__order {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -1278,6 +1296,7 @@ img {
 
 .product__container {
   display: flex;
+  justify-content: flex-end;
 }
 @media screen and (max-width: 768px) {
   .product__container {
@@ -1296,14 +1315,11 @@ img {
 }
 
 .product__col {
-  width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 @media screen and (max-width: 768px) {
   .product__col {
-    width: 80%;
     margin-right: 0;
     flex-direction: column;
     align-items: center;
@@ -1316,6 +1332,29 @@ img {
 }
 .product__col:last-child {
   margin-right: 0;
+}
+.product__col--picture {
+  margin-right: 3.1111111111rem;
+}
+@media screen and (max-width: 768px) {
+  .product__col--picture {
+    margin: 0;
+  }
+}
+.product__col--text {
+  max-width: 20.7777777778rem;
+  padding-top: 0.7222222222rem;
+}
+@media screen and (max-width: 768px) {
+  .product__col--text {
+    padding-top: 0;
+    max-width: 32.3333333333rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product__col--text {
+    max-width: 20.3333333333rem;
+  }
 }
 
 .product__image {
@@ -1392,7 +1431,6 @@ img {
 
 .parameters__dropdown {
   width: 15.1666666667rem;
-  height: 16.1666666667rem;
   overflow: hidden;
   position: absolute;
   background: #d5d5d5;
@@ -1410,30 +1448,40 @@ img {
   height: 50%;
 }
 
-.parameters__list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .parameters__item {
+  padding: 0.3333333333rem 0.6666666667rem;
+  align-items: center;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   margin-bottom: 0.4444444444rem;
   color: #000;
   font-size: 0.8888888889rem;
   line-height: 1.3333333333rem;
 }
+.parameters__item:last-child {
+  margin-bottom: 0;
+}
+
+.parameter__icon {
+  width: 1.7777777778rem;
+  height: 1.7777777778rem;
+  margin-right: 0.6666666667rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .parameter__icon-elem {
-  width: 1.3333333333rem;
-  height: 1.3333333333rem;
   color: #010002;
+  width: 100%;
+  height: 100%;
 }
 
 .parameter__text {
   font-weight: 500;
+}
+
+.parameter__param {
+  margin-left: auto;
 }
 
 /*# sourceMappingURL=main.css.map */
