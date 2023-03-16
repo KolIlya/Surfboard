@@ -482,11 +482,28 @@ img {
   }
 }
 
-.reviews__display-inner {
+.reviews__list {
+  position: relative;
+  min-height: 14.1666666667rem;
+}
+
+.reviews__item {
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.3s;
+  opacity: 0;
+}
+.reviews__item--active {
+  position: static;
+  opacity: 1;
+  pointer-events: unset;
 }
 @media screen and (max-width: 768px) {
-  .reviews__display-inner {
+  .reviews__item {
     flex-direction: column;
     text-align: center;
     align-items: center;
@@ -1482,6 +1499,125 @@ img {
 
 .parameter__param {
   margin-left: auto;
+}
+
+.team-title {
+  margin-bottom: 2.9444444444rem;
+}
+@media screen and (max-width: 768px) {
+  .team-title {
+    margin-bottom: 1.8333333333rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team-title {
+    font-size: 2.2222222222rem;
+    line-height: 2rem;
+  }
+}
+
+.team__list {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .team__list--desktop {
+    display: none;
+  }
+}
+.team__list--mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .team__list--mobile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.team__item {
+  text-align: center;
+  margin-right: 1.1111111111rem;
+  color: #292929;
+  flex: 1;
+  position: relative;
+  max-width: 12.2222222222rem;
+}
+.team__item:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .team__item {
+    margin-bottom: 0.8888888889rem;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team__item {
+    margin-bottom: 0.3333333333rem;
+  }
+}
+
+.team__item-wrapper {
+  width: 12.2222222222rem;
+  height: 16.1111111111rem;
+  margin-bottom: 1.1666666667rem;
+}
+
+.team__item-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.team__button {
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.team__name {
+  cursor: pointer;
+  font-size: 1.1666666667rem;
+  font-weight: 700;
+  line-height: 1.3888888889rem;
+  margin-bottom: 0.4444444444rem;
+  background: 0 0;
+  border: none;
+  margin-right: 0.2222222222rem;
+  padding: 0;
+}
+
+.team__icon {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.team__icon-elem {
+  width: 100%;
+  height: 100%;
+}
+
+.team__content {
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  position: absolute;
+  top: 100%;
+  transition: height 0.3s;
+}
+
+.team__content-title {
+  font-size: 1rem;
+  line-height: 1.2222222222rem;
+  margin-bottom: 0.2222222222rem;
+}
+
+.team__content-text {
+  font-size: 1rem;
+  line-height: 1.2222222222rem;
+  color: #666666;
 }
 
 /*# sourceMappingURL=main.css.map */

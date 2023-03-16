@@ -25,8 +25,26 @@
     }
 }
 
-.reviews__display-inner {
+.reviews__list {
+    position: relative;
+    min-height: rem(255px);
+}
+
+.reviews__item {
     display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.3s;
+    opacity: 0;
+
+    &--active {
+        position: static;
+        opacity: 1;
+        pointer-events: unset;
+    }
 
     @include tablets {
         flex-direction: column;
