@@ -227,6 +227,7 @@ img {
   transition: 0.3s color;
   display: inline-block;
   border: none;
+  cursor: pointer;
 }
 .button--theme--yellow {
   background: #FEDB3F;
