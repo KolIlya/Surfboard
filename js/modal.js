@@ -44,7 +44,7 @@ $(".form").submit(e => {
         });
 
         request.fail(data =>{
-            const message = data.responseJSON.message;
+            const message = data?.responseJSON?.message ? data.responseJSON.message : "Произошла ошибка, попробуйте позднее";
             content.text(message);
             modal.addClass("error-modal");
         });

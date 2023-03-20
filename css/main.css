@@ -898,6 +898,10 @@ img {
   }
 }
 
+.map-section {
+  position: relative;
+}
+
 .map__wrapper {
   height: 100%;
   width: 100%;
