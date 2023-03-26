@@ -1703,7 +1703,7 @@ img {
 
 .products-menu-section {
   position: relative;
-  background: url(../../img/products-menu-bg.png) center center/cover no-repeat;
+  background: url(../img/products-menu-bg.png) center center/cover no-repeat;
   color: #fff;
 }
 
